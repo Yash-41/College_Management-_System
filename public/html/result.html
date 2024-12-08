@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Results</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="bg-gray-500 p-4 fixed top-0 left-0 right-0 z-50">
+    <div class="container mx-auto flex justify-between items-center">
+      <!-- Logo -->
+      <a href="#" class="text-white text-2xl font-bold">CMS</a>
+
+      <!-- Search Bar (centered on the navbar) -->
+      <div class="hidden md:flex flex-grow justify-center">
+        <input type="text" class="p-2 rounded-l-lg w-64 focus:outline-none" placeholder="Search...">
+        <button class="bg-blue-500 text-white px-4 rounded-r-lg hover:bg-blue-600">Search</button>
+      </div>
+
+      <!-- Menu Items (hidden on mobile) -->
+      <div class="hidden md:flex space-x-4 items-center">
+        <a href="/" class="text-gray-300 hover:text-white">Home</a>
+        <a href="#" class="text-gray-300 hover:text-white">About</a>
+        <a href="/html/dashboard.html" class="text-gray-300 hover:text-white">Dashboard</a>
+        <a href="/html/result.html" class="text-gray-300 hover:text-white">Results</a>
+        <a href="/html/syllabus.html" class="text-gray-300 hover:text-white">Syllabus</a>
+        <a href="#" class="text-gray-300 hover:text-white">Contact</a>
+
+        <!-- Login and Signup Buttons -->
+        <a href="#" class="bg-gray-700 text-white px-4 py-2 rounded hover:bg-gray-600">Login</a>
+        <a href="/html/signup.html" class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">Signup</a>
+      </div>
+
+      <!-- Mobile Menu Button -->
+      <div class="md:hidden flex items-center">
+        <button id="menu-btn" class="text-white focus:outline-none">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Menu (hidden by default) -->
+    <div id="mobile-menu" class="hidden md:hidden">
+      <a href="index.html" class="block px-4 py-2 text-gray-300 hover:bg-gray-700 hover:text-white">Home</a>
+      <a href="#" class="block px-4 py-2 text-gray-300 hover:bg-gray-700 hover:text-white">About</a>
+      <a href="#" class="block px-4 py-2 text-gray-300 hover:bg-gray-700 hover:text-white">Services</a>
+      <a href="html/result.html" class="block px-4 py-2 text-gray-300 hover:bg-gray-700 hover:text-white">Results</a>
+      <a href="html/syllabus.html" class="block px-4 py-2 text-gray-300 hover:bg-gray-700 hover:text-white">Syllabus</a>
+      <a href="#" class="block px-4 py-2 text-gray-300 hover:bg-gray-700 hover:text-white">Contact</a>
+      <a href="#" class="block px-4 py-2 text-gray-300 hover:bg-gray-700 hover:text-white">Login</a>
+      <a href="signup.html" class="block px-4 py-2 text-gray-300 hover:bg-gray-700 hover:text-white">Signup</a>
+    </div>
+  </nav>
+
+  <!-- Body content (results section) -->
+  <div class="container mx-auto mt-20 py-10">
+    <h1 class="text-4xl font-bold text-center mb-8">Results Page</h1>
+
+    <div class="bg-gray-100 p-8 rounded-lg shadow-lg">
+      <!-- Table for Results -->
+      <table class="w-full text-left border-collapse">
+        <thead>
+          <tr>
+            <th class="px-4 py-2 border-b-2 border-gray-300">Serial No.</th>
+            <th class="px-4 py-2 border-b-2 border-gray-300 w-2/3">Branch</th>
+            <th class="px-4 py-2 border-b-2 border-gray-300">Year</th>
+          </tr>
+        </thead>
+        <tbody>
+          <!-- Serial No. and Year for each Branch -->
+          <!-- Row 1 -->
+          <tr>
+            <td class="px-4 py-2 border-b border-gray-300">1</td>
+            <td class="px-4 py-2 border-b border-gray-300">B.Tech- Automobile Engineering</td>
+            <td class="px-4 py-2 border-b border-gray-300">1st Year</td>
+          </tr>
+          <tr>
+            <td class="px-4 py-2 border-b border-gray-300">2</td>
+            <td class="px-4 py-2 border-b border-gray-300">B.Tech- Automobile Engineering</td>
+            <td class="px-4 py-2 border-b border-gray-300">2nd Year</td>
+          </tr>
+          <tr>
+            <td class="px-4 py-2 border-b border-gray-300">3</td>
+            <td class="px-4 py-2 border-b border-gray-300">B.Tech- Automobile Engineering</td>
+            <td class="px-4 py-2 border-b border-gray-300">3rd Year</td>
+          </tr>
+          <tr>
+            <td class="px-4 py-2 border-b border-gray-300">4</td>
+            <td class="px-4 py-2 border-b border-gray-300">B.Tech- Automobile Engineering</td>
+            <td class="px-4 py-2 border-b border-gray-300">4th Year</td>
+          </tr>
+
+          <!-- Add similar rows for the remaining branches -->
+          <tr>
+            <td class="px-4 py-2 border-b border-gray-300">5</td>
+            <td class="px-4 py-2 border-b border-gray-300">B.Tech- Biotechnology</td>
+            <td class="px-4 py-2 border-b border-gray-300">1st Year</td>
+          </tr>
+          <tr>
+            <td class="px-4 py-2 border-b border-gray-300">6</td>
+            <td class="px-4 py-2 border-b border-gray-300">B.Tech- Biotechnology</td>
+            <td class="px-4 py-2 border-b border-gray-300">2nd Year</td>
+          </tr>
+          <tr>
+            <td class="px-4 py-2 border-b border-gray-300">7</td>
+            <td class="px-4 py-2 border-b border-gray-300">B.Tech- Biotechnology</td>
+            <td class="px-4 py-2 border-b border-gray-300">3rd Year</td>
+          </tr>
+          <tr>
+            <td class="px-4 py-2 border-b border-gray-300">8</td>
+            <td class="px-4 py-2 border-b border-gray-300">B.Tech- Biotechnology</td>
+            <td class="px-4 py-2 border-b border-gray-300">4th Year</td>
+          </tr>
+
+          <!-- Add rows for all other branches like Civil, CSE, EEE, etc. -->
+          <!-- Example for Computer Science Engineering -->
+          <tr>
+            <td class="px-4 py-2 border-b border-gray-300">9</td>
+            <td class="px-4 py-2 border-b border-gray-300">B.Tech- Computer Science and Engineering</td>
+            <td class="px-4 py-2 border-b border-gray-300">1st Year</td>
+          </tr>
+          <tr>
+            <td class="px-4 py-2 border-b border-gray-300">10</td>
+            <td class="px-4 py-2 border-b border-gray-300">B.Tech- Computer Science and Engineering</td>
+            <td class="px-4 py-2 border-b border-gray-300">2nd Year</td>
+          </tr>
+          <tr>
+            <td class="px-4 py-2 border-b border-gray-300">11</td>
+            <td class="px-4 py-2 border-b border-gray-300">B.Tech- Computer Science and Engineering</td>
+            <td class="px-4 py-2 border-b border-gray-300">3rd Year</td>
+          </tr>
+          <tr>
+            <td class="px-4 py-2 border-b border-gray-300">12</td>
+            <td class="px-4 py-2 border-b border-gray-300">B.Tech- Computer Science and Engineering</td>
+            <td class="px-4 py-2 border-b border-gray-300">4th Year</td>
+          </tr>
+
+          <!-- Repeat for other branches like ECE, Mechanical, etc. -->
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+   <!-- Footer Start -->
+<div class="bg-gray-900 text-gray-400 pt-5 mt-5">
+    <div class="container mx-auto py-5">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5">
+            <!-- Company Section -->
+            <div>
+                <h5 class="text-white mb-4 font-semibold">College</h5>
+                <a class="block mb-2 text-gray-400 hover:text-white transition-colors" href="#">About Us</a>
+                <a class="block mb-2 text-gray-400 hover:text-white transition-colors" href="#">Contact Us</a>
+                <a class="block mb-2 text-gray-400 hover:text-white transition-colors" href="#">Our Services</a>
+                <a class="block mb-2 text-gray-400 hover:text-white transition-colors" href="#">Privacy Policy</a>
+                <a class="block text-gray-400 hover:text-white transition-colors" href="#">Terms & Condition</a>
+            </div>
+  
+            <!-- Quick Links Section -->
+            <div>
+                <h5 class="text-white mb-4 font-semibold">Quick Links</h5>
+                <a class="block mb-2 text-gray-400 hover:text-white transition-colors" href="#">About Us</a>
+                <a class="block mb-2 text-gray-400 hover:text-white transition-colors" href="#">Contact Us</a>
+                <a class="block mb-2 text-gray-400 hover:text-white transition-colors" href="#">Our Services</a>
+                <a class="block mb-2 text-gray-400 hover:text-white transition-colors" href="#">Privacy Policy</a>
+                <a class="block text-gray-400 hover:text-white transition-colors" href="#">Terms & Condition</a>
+            </div>
+  
+            <!-- Contact Section -->
+            <div>
+                <h5 class="text-white mb-4 font-semibold">Contact</h5>
+                <p class="mb-2"><i class="fa fa-map-marker-alt mr-2"></i>Ministry of Social Justice and Empowerment, IND</p>
+                <p class="mb-2"><i class="fa fa-phone-alt mr-2"></i>+91999345465</p>
+                <p class="mb-2"><i class="fa fa-envelope mr-2"></i>info@CMS.com</p>
+                <div class="flex space-x-2 pt-2">
+                    <a class="text-gray-400 hover:text-white" href="#"><i class="fab fa-twitter"></i></a>
+                    <a class="text-gray-400 hover:text-white" href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a class="text-gray-400 hover:text-white" href="#"><i class="fab fa-youtube"></i></a>
+                    <a class="text-gray-400 hover:text-white" href="#"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+  
+            <!-- Newsletter Section -->
+            <div>
+                <h5 class="text-white mb-4 font-semibold">CMS Newsletter</h5>
+                <p class="mb-4">Subscribe to our newsletter for updates.</p>
+                <div class="relative">
+                    <input class="w-full py-3 px-4 bg-transparent border border-gray-600 rounded-full text-gray-400 focus:ring-2 focus:ring-blue-500 focus:outline-none" type="text" placeholder="Your email">
+                    <button class="absolute right-2 top-1/2 transform -translate-y-1/2 bg-blue-600 text-white py-2 px-4 rounded-full hover:bg-blue-500">Sign In</button>
+                </div>
+            </div>
+        </div>
+    </div>
+  
+    <!-- Copyright and Footer Links -->
+    <div class="bg-gray-800 py-4">
+        <div class="container mx-auto text-center md:text-left flex flex-col md:flex-row justify-between items-center text-gray-500 text-sm">
+            <p>&copy; <a href="#" class="text-white hover:underline">CMS</a>, All Rights Reserved 2023.</p>
+            <div class="mt-4 md:mt-0">
+                <a href="#" class="mx-2 text-gray-500 hover:text-white">Home</a>
+                <a href="#" class="mx-2 text-gray-500 hover:text-white">Cookies</a>
+                <a href="#" class="mx-2 text-gray-500 hover:text-white">Help</a>
+                <a href="#" class="mx-2 text-gray-500 hover:text-white">FAQs</a>
+            </div>
+        </div>
+    </div>
+  </div>
+  <!-- Footer End -->
+  
+  
+
+
+
+  <script>
+    // Mobile menu toggle
+    const menuBtn = document.getElementById('menu-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
+
+    menuBtn.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    });
+  </script>
+</body>
+</html>

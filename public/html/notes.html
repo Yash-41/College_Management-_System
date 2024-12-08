@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Notes</title>
+
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <style>
+    body {
+      background-color: #f0f4f8;
+    }
+    .notes-box {
+      background-color: #fff;
+      border: 1px solid #e0e6eb;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      padding: 20px;
+      transition: transform 0.2s;
+    }
+    .notes-box:hover {
+      transform: translateY(-5px);
+    }
+    .section-title {
+      font-size: 1.5rem;
+      font-weight: bold;
+      color: #1a202c;
+    }
+    .branch-name {
+      font-size: 1.25rem;
+      font-weight: bold;
+      color: #2d3748;
+      margin-top: 10px;
+    }
+    .branch-name a {
+      color: #2d3748;
+      text-decoration: none;
+    }
+    .branch-name a:hover {
+      text-decoration: underline;
+      color: #3182ce;
+    }
+  </style>
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="bg-gray-500 p-4 fixed top-0 left-0 right-0 z-50">
+  <div class="container mx-auto flex justify-between items-center">
+    <a href="#" class="text-white text-2xl font-bold">CMS</a>
+    <div class="hidden md:flex flex-grow justify-center">
+      <input type="text" class="p-2 rounded-l-lg w-64 focus:outline-none" placeholder="Search...">
+      <button class="bg-blue-500 text-white px-4 rounded-r-lg hover:bg-blue-600">Search</button>
+    </div>
+    <div class="hidden md:flex space-x-4 items-center">
+      <a href="/" class="text-gray-300 hover:text-white">Home</a>
+      <a href="#" class="text-gray-300 hover:text-white">About</a>
+      <a href="/html/dashboard.html" class="text-gray-300 hover:text-white">Dashboard</a>
+      <a href="result.html" class="text-gray-300 hover:text-white">Results</a>
+      <a href="syllabus.html" class="text-gray-300 hover:text-white">Syllabus</a>
+      <a href="#" class="text-gray-300 hover:text-white">Contact</a>
+      <a href="#" class="bg-gray-700 text-white px-4 py-2 rounded hover:bg-gray-600">Login</a>
+      <a href="signup.html" class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">Signup</a>
+    </div>
+    <div class="md:hidden flex items-center">
+      <button id="menu-btn" class="text-white focus:outline-none">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+        </svg>
+      </button>
+    </div>
+  </div>
+  <div id="mobile-menu" class="hidden md:hidden">
+    <a href="#" class="block px-4 py-2 text-gray-300 hover:bg-gray-700 hover:text-white">Home</a>
+    <a href="#" class="block px-4 py-2 text-gray-300 hover:bg-gray-700 hover:text-white">About</a>
+    <a href="#" class="block px-4 py-2 text-gray-300 hover:bg-gray-700 hover:text-white">Services</a>
+    <a href="#" class="block px-4 py-2 text-gray-300 hover:bg-gray-700 hover:text-white">Results</a>
+    <a href="#" class="block px-4 py-2 text-gray-300 hover:bg-gray-700 hover:text-white">Syllabus</a>
+    <a href="#" class="block px-4 py-2 text-gray-300 hover:bg-gray-700 hover:text-white">Contact</a>
+    <a href="#" class="block px-4 py-2 text-gray-300 hover:bg-gray-700 hover:text-white">Login</a>
+    <a href="#" class="block px-4 py-2 text-gray-300 hover:bg-gray-700 hover:text-white">Signup</a>
+  </div>
+</nav>
+
+<div class="mt-16 container mx-auto p-6">
+
+  <!-- Page Title -->
+  <h1 class="text-3xl font-bold text-blue-600 mb-6">Notes by Year and Branch</h1>
+
+  <!-- Notes Section -->
+  <div class="space-y-8">
+
+    <!-- 1st Year Notes -->
+    <div class="notes-box">
+      <div class="section-title">1st Year Notes</div>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mt-4">
+        <div class="branch-name"><a href="computersciencenotes.html">CS - Computer Science</a></div>
+        <div class="branch-name"><a href="/notes/it1.html">IT - Information Technology</a></div>
+        <div class="branch-name"><a href="/notes/mechanical1.html">Mechanical Engineering</a></div>
+        <div class="branch-name"><a href="/notes/ai1.html">AI - Artificial Intelligence</a></div>
+        <div class="branch-name"><a href="/notes/ee1.html">EE - Electrical Engineering</a></div>
+      </div>
+    </div>
+
+    <!-- 2nd Year Notes -->
+    <div class="notes-box">
+      <div class="section-title">2nd Year Notes</div>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mt-4">
+        <div class="branch-name"><a href="/notes/cs2.html">CS - Computer Science</a></div>
+        <div class="branch-name"><a href="/notes/it2.html">IT - Information Technology</a></div>
+        <div class="branch-name"><a href="/notes/mechanical2.html">Mechanical Engineering</a></div>
+        <div class="branch-name"><a href="/notes/ai2.html">AI - Artificial Intelligence</a></div>
+        <div class="branch-name"><a href="/notes/ee2.html">EE - Electrical Engineering</a></div>
+      </div>
+    </div>
+
+    <!-- 3rd Year Notes -->
+    <div class="notes-box">
+      <div class="section-title">3rd Year Notes</div>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mt-4">
+        <div class="branch-name"><a href="/notes/cs3.html">CS - Computer Science</a></div>
+        <div class="branch-name"><a href="/notes/it3.html">IT - Information Technology</a></div>
+        <div class="branch-name"><a href="/notes/mechanical3.html">Mechanical Engineering</a></div>
+        <div class="branch-name"><a href="/notes/ai3.html">AI - Artificial Intelligence</a></div>
+        <div class="branch-name"><a href="/notes/ee3.html">EE - Electrical Engineering</a></div>
+      </div>
+    </div>
+
+    <!-- 4th Year Notes -->
+    <div class="notes-box">
+      <div class="section-title">4th Year Notes</div>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mt-4">
+        <div class="branch-name"><a href="/notes/cs4.html">CS - Computer Science</a></div>
+        <div class="branch-name"><a href="/notes/it4.html">IT - Information Technology</a></div>
+        <div class="branch-name"><a href="/notes/mechanical4.html">Mechanical Engineering</a></div>
+        <div class="branch-name"><a href="/notes/ai4.html">AI - Artificial Intelligence</a></div>
+        <div class="branch-name"><a href="/notes/ee4.html">EE - Electrical Engineering</a></div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<!-- Footer -->
+<div class="bg-gray-900 text-gray-400 pt-5 mt-5">
+  <div class="container mx-auto py-5">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5">
+          <div>
+              <h5 class="text-white mb-4 font-semibold">College</h5>
+              <a class="block mb-2 text-gray-400 hover:text-white transition-colors" href="#">About Us</a>
+              <a class="block mb-2 text-gray-400 hover:text-white transition-colors" href="#">Contact Us</a>
+          </div>
+          <div>
+              <h5 class="text-white mb-4 font-semibold">Quick Links</h5>
+              <a class="block mb-2 text-gray-400 hover:text-white transition-colors" href="#">About Us</a>
+          </div>
+          <div>
+              <h5 class="text-white mb-4 font-semibold">Contact</h5>
+              <p class="mb-2"><i class="fa fa-map-marker-alt mr-2"></i>Ministry of Social Justice and Empowerment, IND</p>
+              <p class="mb-2"><i class="fa fa-phone-alt mr-2"></i>+91999345465</p>
+              <p class="mb-2"><i class="fa fa-envelope mr-2"></i>info@CMS.com</p>
+          </div>
+          <div>
+              <h5 class="text-white mb-4 font-semibold">CMS Newsletter</h5>
+              <p class="mb-4">Subscribe to our newsletter for updates.</p>
+              <div class="relative">
+                  <input class="w-full py-3 px-4 bg-transparent border border-gray-600 rounded-full text-gray-400 focus:ring-2 focus:ring-blue-500 focus:outline-none" type="text" placeholder="Your email">
+                  <button class="absolute right-2 top-1/2 transform -translate-y-1/2 bg-blue-600 hover:bg-blue-700 text-white font-bold px-4 py-2 rounded-full">Sign Up</button>
+              </div>
+          </div>
+      </div>
+      <div class="text-center pt-4">
+          <p class="mb-0">&copy; CMS, All Right Reserved.</p>
+      </div>
+  </div>
+</div>
+
+<!-- Mobile menu toggle script -->
+<script>
+  const menuBtn = document.getElementById('menu-btn');
+  const mobileMenu = document.getElementById('mobile-menu');
+  
+  menuBtn.addEventListener('click', () => {
+    mobileMenu.classList.toggle('hidden');
+  });
+</script>
+
+</body>
+</html>

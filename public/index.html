@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Navbar Example</title>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  
+  <style>
+    /* Word wrapping and styling for the text section */
+    body {
+    /* background: linear-gradient(100deg, #ffffff, #eafcd7); */
+    background-color: #fff6f6;
+}
+    .wordwrap {
+      word-wrap: break-word; /* For breaking long words */
+      overflow-wrap: break-word; /* Ensures words break */
+      white-space: normal; /* Allows text to wrap normally */
+      width: 700px; /* Fixed width */
+      padding: 10px;
+      margin: 10px;
+      margin-left: 100px;
+      font-size: 24px;
+    }
+
+    /* Styling for the form box */
+    .form-box {
+      background-color: #a2df53;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      max-width: 400px;
+      width: 100%;
+    }
+
+    .form-box h2 {
+      text-align: center;
+      margin-bottom: 20px;
+      color: #333;
+    }
+
+    .form-box input,
+    .form-box textarea {
+      width: 100%;
+      padding: 10px;
+      margin: 10px 0;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+
+    .form-box textarea {
+      resize: vertical;
+      height: 100px;
+    }
+
+    .form-box button {
+      background-color: #007BFF;
+      color: white;
+      padding: 10px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      width: 100%;
+    }
+
+    .form-box button:hover {
+      background-color: #0056b3;
+    }
+  </style>
+</head>
+<body>
+
+ <!-- Navbar -->
+<nav class="bg-gray-500 p-4 fixed top-0 left-0 right-0 z-50">
+  <div class="container mx-auto flex justify-between items-center">
+    <!-- Logo -->
+    <a href="#" class="text-white text-2xl font-bold">CMS</a>
+
+    <!-- Search Bar (centered on the navbar) -->
+    <div class="hidden md:flex flex-grow justify-center">
+      <input type="text" class="p-2 rounded-l-lg w-64 focus:outline-none" placeholder="Search...">
+      <button class="bg-blue-500 text-white px-4 rounded-r-lg hover:bg-blue-600">Search</button>
+    </div>
+
+    <!-- Menu Items (hidden on mobile) -->
+    <div class="hidden md:flex space-x-4 items-center">
+      <a href="#" class="text-gray-300 hover:text-white">Home</a>
+      <a href="#" class="text-gray-300 hover:text-white">About</a>
+      <a href="html/dashboard.html" class="text-gray-300 hover:text-white">Dashboard</a>
+      <a href="html/result.html" class="text-gray-300 hover:text-white">Results</a>
+      <a href="html/syllabus.html" class="text-gray-300 hover:text-white">Syllabus</a>
+      <a href="#" class="text-gray-300 hover:text-white">Contact</a>
+
+      <!-- Login and Signup Buttons -->
+      <a href="#" class="bg-gray-700 text-white px-4 py-2 rounded hover:bg-gray-600">Login</a>
+      <a href="html/signup.html" class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">Signup</a>
+    </div>
+
+    <!-- Mobile Menu Button -->
+    <div class="md:hidden flex items-center">
+      <button id="menu-btn" class="text-white focus:outline-none">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+        </svg>
+      </button>
+    </div>
+  </div>
+
+  <!-- Mobile Menu (hidden by default) -->
+  <div id="mobile-menu" class="hidden md:hidden">
+    <a href="#" class="block px-4 py-2 text-gray-300 hover:bg-gray-700 hover:text-white">Home</a>
+    <a href="#" class="block px-4 py-2 text-gray-300 hover:bg-gray-700 hover:text-white">About</a>
+    <a href="#" class="block px-4 py-2 text-gray-300 hover:bg-gray-700 hover:text-white">Services</a>
+    <a href="#" class="block px-4 py-2 text-gray-300 hover:bg-gray-700 hover:text-white">Results</a>
+    <a href="#" class="block px-4 py-2 text-gray-300 hover:bg-gray-700 hover:text-white">Syllabus</a>
+    <a href="#" class="block px-4 py-2 text-gray-300 hover:bg-gray-700 hover:text-white">Contact</a>
+    <a href="#" class="block px-4 py-2 text-gray-300 hover:bg-gray-700 hover:text-white">Login</a>
+    <a href="#" class="block px-4 py-2 text-gray-300 hover:bg-gray-700 hover:text-white">Signup</a>
+  </div>
+</nav>
+
+<!-- Add margin to the body content to prevent content being hidden behind the fixed navbar -->
+<div class="mt-16">
+  <!-- Your page content starts here -->
+</div>
+
+
+
+  <!-- Main content with background image -->
+  <div class="clgimage" style="background-image: url('clg image.jpeg'); background-size: cover; background-position: center; height: 600px; width: 100%;"> 
+    
+  </div>
+    <div class="container mx-auto flex justify-between items-start p-6">
+      
+      <!-- Text Section -->
+      <div class="wordwrap">
+        <b>Yaduvanshi Shiksha Niketan</b><br>
+        MLD Yaduvanshi Shiksha Niketan is an English Medium Co-educational Residential cum Day Boarding School up to Senior Secondary standard affiliated to Central Board of Secondary Education (Govt. of India) New Delhi. It is situated in the south of the village Sohali, Distt. Jhunjhunu(Rajasthan).<br><br>
+        The school is at a distance of 16 km from Mahendergarh and 25 km from Narnaul, Haryana. The school operates on progressive modern lines while providing the facilities of modern education; it retains the best traditions of our rich Indian legacy. The residential and day boarding ambience of the school provides a genial, tranquil, secure, nature learning environment – a comfort zone to interact, learn and bloom into sensitized, responsible disciplined and balanced human beings.<br><br>
+        It helps them to imbibe values of universal appeal and trains them with life skills that should eventually enable them to face the challenges of the world order.<br><br>
+        <a href="#">Read More</a>
+      </div>
+
+      <!-- Form Section -->
+      <div class="form-box">
+        <h2>Contact Us</h2>
+        <form>
+          <!-- Name Input -->
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" placeholder="Enter your name" required>
+
+          <!-- Email Input -->
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+          <!-- Contact Number Input -->
+          <label for="contact">Contact No.:</label>
+          <input type="tel" id="contact" name="contact" placeholder="Enter your contact number" required>
+
+          <!-- Message Textarea -->
+          <label for="message">Your Message:</label>
+          <textarea id="message" name="message" placeholder="Write your message here" required></textarea>
+
+          <!-- Submit Button -->
+          <button type="submit">Submit</button>
+        </form>
+      </div>
+
+    </div>
+     
+    
+
+    <div>
+     <!-- Main Container -->
+  <div class="container mx-auto flex justify-center space-x-4">
+
+    <!-- First Div Box with Scrolling Content -->
+    <div class="w-64 h-64 bg-teal-100 text-left flex flex-col items-start justify-start shadow-lg rounded-lg overflow-y-auto p-4">
+      <p class="text-gray-700 font-semibold">
+        <b>Library</b><br>
+        The school has a rich library where books ranging from all-time classics to contemporary blue-ribbon books, ample reference books and support materials for board and competitive exams (i.e., NDA, JEE, NEET, CLAT, etc.) are available for students. In order to keep the students abreast of the happenings around the world, the library has all the national dailies.
+      </p>
+    </div>
+
+    <!-- Second Div Box with Scrolling Content -->
+    <div class="w-64 h-64 bg-teal-100 text-left flex flex-col items-start justify-start shadow-lg rounded-lg overflow-y-auto p-4">
+      <p class="text-gray-700 font-semibold">
+        <b>Sports</b><br>
+        <b>Playground</b><br>
+        True meaning of education lies in all-round development of the students viz mental, social, intellectual, and also physical development. The school has sprawling playgrounds with a 200-meter 8-lane track, fields, and courts for all outdoor games, besides an indoor stadium and a Hi-Fi Gymnasium and a well-equipped sports room. Games, a compulsory activity, ultimately aim to foster brotherhood and sportsmanship among the children.
+      </p>
+    </div>
+
+    <!-- Third Div Box with Scrolling Content -->
+    <div class="w-64 h-64 bg-teal-100  text-left flex flex-col items-start justify-start shadow-lg rounded-lg overflow-y-auto p-4">
+      <p class="text-gray-700 font-semibold">
+        <b>Laboratory</b><br>
+        There are more than 200 airy and well-ventilated A.C. classrooms with backup. All the classrooms are with an ideal ratio of teachers to students...
+      </p>
+    </div>
+
+  </div>
+
+  <style>
+    /* Custom cream color in Tailwind */
+    @layer utilities {
+      .bg-teal-100  {
+        background-color: #f7f7bc; /* Cream color */
+      }
+    }
+  </style>
+   
+  </div>
+
+
+  <div class="mt-10 mb-15">
+    <!-- Main Container -->
+ <div class="container mx-auto flex justify-center space-x-4">
+
+   <!-- First Div Box with Scrolling Content -->
+   <div class="w-64 h-64 bg-cream-300 text-left flex flex-col items-start justify-start shadow-lg rounded-lg overflow-y-auto p-4">
+     <p class="text-gray-700 font-semibold">
+       <b>Library</b><br>
+       The school has a rich library where books ranging from all-time classics to contemporary blue-ribbon books, ample reference books and support materials for board and competitive exams (i.e., NDA, JEE, NEET, CLAT, etc.) are available for students. In order to keep the students abreast of the happenings around the world, the library has all the national dailies.
+     </p>
+   </div>
+
+   <!-- Second Div Box with Scrolling Content -->
+   <div class="w-64 h-64 bg-cream-300 text-left flex flex-col items-start justify-start shadow-lg rounded-lg overflow-y-auto p-4">
+     <p class="text-gray-700 font-semibold">
+       <b>Sports</b><br>
+       <b>Playground</b><br>
+       True meaning of education lies in all-round development of the students viz mental, social, intellectual, and also physical development. The school has sprawling playgrounds with a 200-meter 8-lane track, fields, and courts for all outdoor games, besides an indoor stadium and a Hi-Fi Gymnasium and a well-equipped sports room. Games, a compulsory activity, ultimately aim to foster brotherhood and sportsmanship among the children.
+     </p>
+   </div>
+
+   <!-- Third Div Box with Scrolling Content -->
+   <div class="w-64 h-64 bg-cream-300 text-left flex flex-col items-start justify-start shadow-lg rounded-lg overflow-y-auto p-4">
+     <p class="text-gray-700 font-semibold">
+       <b>Laboratory</b><br>
+       There are more than 200 airy and well-ventilated A.C. classrooms with backup. All the classrooms are with an ideal ratio of teachers to students...
+     </p>
+   </div>
+
+ </div>
+
+ <style>
+   /* Custom cream color in Tailwind */
+   @layer utilities {
+     .bg-cream-300 {
+       background-color: #f7f7bc; /* Cream color */
+     }
+   }
+ </style>
+  
+ </div>
+
+
+
+    <!-- Footer Start -->
+<div class="bg-gray-900 text-gray-400 pt-5 mt-5">
+  <div class="container mx-auto py-5">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5">
+          <!-- Company Section -->
+          <div>
+              <h5 class="text-white mb-4 font-semibold">College</h5>
+              <a class="block mb-2 text-gray-400 hover:text-white transition-colors" href="#">About Us</a>
+              <a class="block mb-2 text-gray-400 hover:text-white transition-colors" href="#">Contact Us</a>
+              <a class="block mb-2 text-gray-400 hover:text-white transition-colors" href="#">Our Services</a>
+              <a class="block mb-2 text-gray-400 hover:text-white transition-colors" href="#">Privacy Policy</a>
+              <a class="block text-gray-400 hover:text-white transition-colors" href="#">Terms & Condition</a>
+          </div>
+
+          <!-- Quick Links Section -->
+          <div>
+              <h5 class="text-white mb-4 font-semibold">Quick Links</h5>
+              <a class="block mb-2 text-gray-400 hover:text-white transition-colors" href="#">About Us</a>
+              <a class="block mb-2 text-gray-400 hover:text-white transition-colors" href="#">Contact Us</a>
+              <a class="block mb-2 text-gray-400 hover:text-white transition-colors" href="#">Our Services</a>
+              <a class="block mb-2 text-gray-400 hover:text-white transition-colors" href="#">Privacy Policy</a>
+              <a class="block text-gray-400 hover:text-white transition-colors" href="#">Terms & Condition</a>
+          </div>
+
+          <!-- Contact Section -->
+          <div>
+              <h5 class="text-white mb-4 font-semibold">Contact</h5>
+              <p class="mb-2"><i class="fa fa-map-marker-alt mr-2"></i>Ministry of Social Justice and Empowerment, IND</p>
+              <p class="mb-2"><i class="fa fa-phone-alt mr-2"></i>+91999345465</p>
+              <p class="mb-2"><i class="fa fa-envelope mr-2"></i>info@CMS.com</p>
+              <div class="flex space-x-2 pt-2">
+                  <a class="text-gray-400 hover:text-white" href="#"><i class="fab fa-twitter"></i></a>
+                  <a class="text-gray-400 hover:text-white" href="#"><i class="fab fa-facebook-f"></i></a>
+                  <a class="text-gray-400 hover:text-white" href="#"><i class="fab fa-youtube"></i></a>
+                  <a class="text-gray-400 hover:text-white" href="#"><i class="fab fa-linkedin-in"></i></a>
+              </div>
+          </div>
+
+          <!-- Newsletter Section -->
+          <div>
+              <h5 class="text-white mb-4 font-semibold">CMS Newsletter</h5>
+              <p class="mb-4">Subscribe to our newsletter for updates.</p>
+              <div class="relative">
+                  <input class="w-full py-3 px-4 bg-transparent border border-gray-600 rounded-full text-gray-400 focus:ring-2 focus:ring-blue-500 focus:outline-none" type="text" placeholder="Your email">
+                  <button class="absolute right-2 top-1/2 transform -translate-y-1/2 bg-blue-600 text-white py-2 px-4 rounded-full hover:bg-blue-500">Sign In</button>
+              </div>
+          </div>
+      </div>
+  </div>
+
+  <!-- Copyright and Footer Links -->
+  <div class="bg-gray-800 py-4">
+      <div class="container mx-auto text-center md:text-left flex flex-col md:flex-row justify-between items-center text-gray-500 text-sm">
+          <p>&copy; <a href="#" class="text-white hover:underline">CMS</a>, All Rights Reserved 2023.</p>
+          <div class="mt-4 md:mt-0">
+              <a href="#" class="mx-2 text-gray-500 hover:text-white">Home</a>
+              <a href="#" class="mx-2 text-gray-500 hover:text-white">Cookies</a>
+              <a href="#" class="mx-2 text-gray-500 hover:text-white">Help</a>
+              <a href="#" class="mx-2 text-gray-500 hover:text-white">FAQs</a>
+          </div>
+      </div>
+  </div>
+</div>
+<!-- Footer End -->
+
+
+
+
+  <script>
+    // Mobile menu toggle
+    const menuBtn = document.getElementById('menu-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
+
+    menuBtn.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    });
+  </script>
+
+</body>
+</html>
+

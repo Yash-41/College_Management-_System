@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Teacher Profiles</title>
+
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  
+  <style>
+    /* Custom Styles */
+    body {
+      background-color: #f0f4f8;
+    }
+    .profile-box {
+      background-color: #fff;
+      border: 1px solid #e0e6eb;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      padding: 20px;
+      transition: transform 0.2s;
+    }
+    .profile-box:hover {
+      transform: translateY(-5px);
+    }
+    .profile-img {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      background-color: #cbd5e0;
+    }
+    .teacher-name {
+      font-size: 1.25rem;
+      font-weight: bold;
+      color: #333;
+    }
+    .teacher-details {
+      font-size: 1rem;
+      color: #555;
+    }
+  </style>
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="bg-gray-500 p-4 fixed top-0 left-0 right-0 z-50">
+  <div class="container mx-auto flex justify-between items-center">
+    <a href="#" class="text-white text-2xl font-bold">CMS</a>
+    <div class="hidden md:flex flex-grow justify-center">
+      <input type="text" class="p-2 rounded-l-lg w-64 focus:outline-none" placeholder="Search...">
+      <button class="bg-blue-500 text-white px-4 rounded-r-lg hover:bg-blue-600">Search</button>
+    </div>
+    <div class="hidden md:flex space-x-4 items-center">
+      <a href="/" class="text-gray-300 hover:text-white">Home</a>
+      <a href="#" class="text-gray-300 hover:text-white">About</a>
+      <a href="/html/dashboard.html" class="text-gray-300 hover:text-white">Dashboard</a>
+      <a href="result.html" class="text-gray-300 hover:text-white">Results</a>
+      <a href="syllabus.html" class="text-gray-300 hover:text-white">Syllabus</a>
+      <a href="#" class="text-gray-300 hover:text-white">Contact</a>
+      <a href="#" class="bg-gray-700 text-white px-4 py-2 rounded hover:bg-gray-600">Login</a>
+      <a href="signup.html" class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">Signup</a>
+    </div>
+    <div class="md:hidden flex items-center">
+      <button id="menu-btn" class="text-white focus:outline-none">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+        </svg>
+      </button>
+    </div>
+  </div>
+  <div id="mobile-menu" class="hidden md:hidden">
+    <a href="#" class="block px-4 py-2 text-gray-300 hover:bg-gray-700 hover:text-white">Home</a>
+    <a href="#" class="block px-4 py-2 text-gray-300 hover:bg-gray-700 hover:text-white">About</a>
+    <a href="#" class="block px-4 py-2 text-gray-300 hover:bg-gray-700 hover:text-white">Services</a>
+    <a href="#" class="block px-4 py-2 text-gray-300 hover:bg-gray-700 hover:text-white">Results</a>
+    <a href="#" class="block px-4 py-2 text-gray-300 hover:bg-gray-700 hover:text-white">Syllabus</a>
+    <a href="#" class="block px-4 py-2 text-gray-300 hover:bg-gray-700 hover:text-white">Contact</a>
+    <a href="#" class="block px-4 py-2 text-gray-300 hover:bg-gray-700 hover:text-white">Login</a>
+    <a href="#" class="block px-4 py-2 text-gray-300 hover:bg-gray-700 hover:text-white">Signup</a>
+  </div>
+</nav>
+
+<div class="mt-16 container mx-auto p-6">
+
+  <!-- Page Title -->
+  <div class="flex justify-between items-center mb-6">
+    <h1 class="text-3xl font-bold text-blue-600">Teacher Profiles</h1>
+   <a href="updateterachersprofile.html"> <button class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">
+      Add New Profile
+    </button>
+  </a>
+  </div>
+
+  <!-- Teacher Profile Section -->
+  <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+
+    <!-- Example Teacher Profile 1 -->
+    <div class="profile-box flex flex-col items-center">
+      <div class="profile-img mb-4"></div>
+      <div class="teacher-name">Dr. Aarti Sharma</div>
+      <div class="teacher-details">Ph.D. in Physics</div>
+      <div class="teacher-details">Joined: 2015</div>
+    </div>
+
+    <!-- Example Teacher Profile 2 -->
+    <div class="profile-box flex flex-col items-center">
+      <div class="profile-img mb-4"></div>
+      <div class="teacher-name">Mr. Ravi Kumar</div>
+      <div class="teacher-details">M.Sc. in Mathematics</div>
+      <div class="teacher-details">Joined: 2017</div>
+    </div>
+
+    <!-- Example Teacher Profile 3 -->
+    <div class="profile-box flex flex-col items-center">
+      <div class="profile-img mb-4"></div>
+      <div class="teacher-name">Ms. Priya Singh</div>
+      <div class="teacher-details">M.A. in English</div>
+      <div class="teacher-details">Joined: 2019</div>
+    </div>
+
+    <div class="profile-box flex flex-col items-center">
+        <div class="profile-img mb-4"></div>
+        <div class="teacher-name">Ms. Priya Singh</div>
+        <div class="teacher-details">M.A. in English</div>
+        <div class="teacher-details">Joined: 2019</div>
+      </div>
+
+      <div class="profile-box flex flex-col items-center">
+        <div class="profile-img mb-4"></div>
+        <div class="teacher-name">Ms. Priya Singh</div>
+        <div class="teacher-details">M.A. in English</div>
+        <div class="teacher-details">Joined: 2019</div>
+      </div>
+
+      <div class="profile-box flex flex-col items-center">
+        <div class="profile-img mb-4"></div>
+        <div class="teacher-name">Ms. Priya Singh</div>
+        <div class="teacher-details">M.A. in English</div>
+        <div class="teacher-details">Joined: 2019</div>
+      </div>
+
+      <div class="profile-box flex flex-col items-center">
+        <div class="profile-img mb-4"></div>
+        <div class="teacher-name">Ms. Priya Singh</div>
+        <div class="teacher-details">M.A. in English</div>
+        <div class="teacher-details">Joined: 2019</div>
+      </div>
+
+      <div class="profile-box flex flex-col items-center">
+        <div class="profile-img mb-4"></div>
+        <div class="teacher-name">Ms. Priya Singh</div>
+        <div class="teacher-details">M.A. in English</div>
+        <div class="teacher-details">Joined: 2019</div>
+      </div>
+
+      <div class="profile-box flex flex-col items-center">
+        <div class="profile-img mb-4"></div>
+        <div class="teacher-name">Ms. Priya Singh</div>
+        <div class="teacher-details">M.A. in English</div>
+        <div class="teacher-details">Joined: 2019</div>
+      </div>
+
+      <div class="profile-box flex flex-col items-center">
+        <div class="profile-img mb-4"></div>
+        <div class="teacher-name">Ms. Priya Singh</div>
+        <div class="teacher-details">M.A. in English</div>
+        <div class="teacher-details">Joined: 2019</div>
+      </div>
+
+      <div class="profile-box flex flex-col items-center">
+        <div class="profile-img mb-4"></div>
+        <div class="teacher-name">Ms. Priya Singh</div>
+        <div class="teacher-details">M.A. in English</div>
+        <div class="teacher-details">Joined: 2019</div>
+      </div>
+
+      <div class="profile-box flex flex-col items-center">
+        <div class="profile-img mb-4"></div>
+        <div class="teacher-name">Ms. Priya Singh</div>
+        <div class="teacher-details">M.A. in English</div>
+        <div class="teacher-details">Joined: 2019</div>
+      </div>
+
+  </div>
+</div>
+
+<!-- Footer -->
+<div class="bg-gray-900 text-gray-400 pt-5 mt-5">
+  <div class="container mx-auto py-5">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5">
+          <div>
+              <h5 class="text-white mb-4 font-semibold">College</h5>
+              <a class="block mb-2 text-gray-400 hover:text-white transition-colors" href="#">About Us</a>
+              <a class="block mb-2 text-gray-400 hover:text-white transition-colors" href="#">Contact Us</a>
+          </div>
+          <div>
+              <h5 class="text-white mb-4 font-semibold">Quick Links</h5>
+              <a class="block mb-2 text-gray-400 hover:text-white transition-colors" href="#">About Us</a>
+          </div>
+          <div>
+              <h5 class="text-white mb-4 font-semibold">Contact</h5>
+              <p class="mb-2"><i class="fa fa-map-marker-alt mr-2"></i>Ministry of Social Justice and Empowerment, IND</p>
+              <p class="mb-2"><i class="fa fa-phone-alt mr-2"></i>+91999345465</p>
+              <p class="mb-2"><i class="fa fa-envelope mr-2"></i>info@CMS.com</p>
+          </div>
+          <div>
+              <h5 class="text-white mb-4 font-semibold">CMS Newsletter</h5>
+              <p class="mb-4">Subscribe to our newsletter for updates.</p>
+              <div class="relative">
+                  <input class="w-full py-3 px-4 bg-transparent border border-gray-600 rounded-full text-gray-400 focus:ring-2 focus:ring-blue-500 focus:outline-none" type="text" placeholder="Your email">
+                  <button class="absolute right-2 top-1/2 transform -translate-y-1/2 bg-blue-600 hover:bg-blue-700 text-white font-bold px-4 py-2 rounded-full">Sign Up</button>
+              </div>
+          </div>
+      </div>
+      <div class="text-center pt-4">
+          <p class="mb-0">&copy; CMS, All Right Reserved.</p>
+      </div>
+  </div>
+</div>
+
+<!-- Mobile menu toggle script -->
+<script>
+  const menuBtn = document.getElementById('menu-btn');
+  const mobileMenu = document.getElementById('mobile-menu');
+  
+  menuBtn.addEventListener('click', () => {
+    mobileMenu.classList.toggle('hidden');
+  });
+</script>
+
+</body>
+</html>

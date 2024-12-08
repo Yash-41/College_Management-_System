@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>News and Updates</title>
+
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  
+  <style>
+    body {
+      background-color: #fff6f6;
+    }
+    .news-box {
+      background-color: #e9f5fb;
+      border: 1px solid #d4e3e8;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      padding: 20px;
+      margin: 10px 0;
+      transition: transform 0.2s;
+    }
+    .news-box:hover {
+      transform: translateY(-5px);
+    }
+    .news-title {
+      font-size: 1.5rem;
+      font-weight: bold;
+      color: #007BFF;
+    }
+    .news-content {
+      font-size: 1rem;
+      color: #333;
+    }
+    .news-date {
+      font-size: 0.85rem;
+      color: #666;
+      text-align: right;
+      margin-top: 10px;
+    }
+  </style>
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="bg-gray-500 p-4 fixed top-0 left-0 right-0 z-50">
+  <div class="container mx-auto flex justify-between items-center">
+    <a href="#" class="text-white text-2xl font-bold">CMS</a>
+    <div class="hidden md:flex flex-grow justify-center">
+      <input type="text" class="p-2 rounded-l-lg w-64 focus:outline-none" placeholder="Search...">
+      <button class="bg-blue-500 text-white px-4 rounded-r-lg hover:bg-blue-600">Search</button>
+    </div>
+    <div class="hidden md:flex space-x-4 items-center">
+      <a href="/" class="text-gray-300 hover:text-white">Home</a>
+      <a href="#" class="text-gray-300 hover:text-white">About</a>
+      <a href="/html/dashboard.html" class="text-gray-300 hover:text-white">Dashboard</a>
+      <a href="result.html" class="text-gray-300 hover:text-white">Results</a>
+      <a href="syllabus.html" class="text-gray-300 hover:text-white">Syllabus</a>
+      <a href="#" class="text-gray-300 hover:text-white">Contact</a>
+      <a href="#" class="bg-gray-700 text-white px-4 py-2 rounded hover:bg-gray-600">Login</a>
+      <a href="/html/signup.html" class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">Signup</a>
+    </div>
+    <div class="md:hidden flex items-center">
+      <button id="menu-btn" class="text-white focus:outline-none">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+        </svg>
+      </button>
+    </div>
+  </div>
+  <div id="mobile-menu" class="hidden md:hidden">
+    <a href="#" class="block px-4 py-2 text-gray-300 hover:bg-gray-700 hover:text-white">Home</a>
+    <a href="#" class="block px-4 py-2 text-gray-300 hover:bg-gray-700 hover:text-white">About</a>
+    <a href="#" class="block px-4 py-2 text-gray-300 hover:bg-gray-700 hover:text-white">Services</a>
+    <a href="#" class="block px-4 py-2 text-gray-300 hover:bg-gray-700 hover:text-white">Results</a>
+    <a href="#" class="block px-4 py-2 text-gray-300 hover:bg-gray-700 hover:text-white">Syllabus</a>
+    <a href="#" class="block px-4 py-2 text-gray-300 hover:bg-gray-700 hover:text-white">Contact</a>
+    <a href="#" class="block px-4 py-2 text-gray-300 hover:bg-gray-700 hover:text-white">Login</a>
+    <a href="#" class="block px-4 py-2 text-gray-300 hover:bg-gray-700 hover:text-white">Signup</a>
+  </div>
+</nav>
+
+<div class="mt-16 container mx-auto p-6">
+  <h1 class="text-3xl font-bold text-blue-600 mb-4">Latest News and Updates</h1>
+   <a href="signup.html" ><button class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">Upload News</button></a>
+  <div id="news-section">
+    <!-- Dynamically fetched news will appear here -->
+  </div>
+</div>
+
+<!-- Script to Fetch News -->
+<script>
+  function fetchNews() {
+    fetch('/api/news')
+      .then(response => response.json())
+      .then(newsList => {
+        const newsSection = document.getElementById('news-section');
+        newsSection.innerHTML = ''; // Clear existing content
+        newsList.reverse();
+        newsList.forEach(news => {
+          const newsBox = document.createElement('div');
+          newsBox.className = 'news-box';
+          newsBox.innerHTML = `
+            <div class="news-title">${news.title}</div>
+            <div class="news-content">${news.content}</div>
+            <div class="news-date">Posted on: ${new Date(news.date).toLocaleDateString()}</div>
+          `;
+          newsSection.appendChild(newsBox);
+        });
+      })
+      .catch(err => console.error('Error fetching news:', err));
+  }
+
+
+  // Fetch news when the page loads
+  window.onload = fetchNews;
+</script>
+
+</body>
+</html>
