@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About - B.K. Birla Institute of Engineering & Technology</title>
+
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  
+  <style>
+    /* Custom Styles */
+    .hero-bg {
+      background: url('https://www.bkbiet.ac.in/images/college.jpg') center/cover no-repeat;
+    }
+  </style>
+</head>
+<body class="bg-gray-100">
+
+ <!-- Navbar -->
+<nav class="bg-gray-500 p-4 fixed top-0 left-0 right-0 z-50">
+    <div class="container mx-auto flex justify-between items-center">
+      <!-- Logo -->
+      <a href="#" class="text-white text-2xl font-bold">CMS</a>
+  
+      <!-- Search Bar (centered on the navbar) -->
+      <div class="hidden md:flex flex-grow justify-center">
+        <input type="text" class="p-2 rounded-l-lg w-64 focus:outline-none" placeholder="Search...">
+        <button class="bg-blue-500 text-white px-4 rounded-r-lg hover:bg-blue-600">Search</button>
+      </div>
+  
+      <!-- Menu Items (hidden on mobile) -->
+      <div class="hidden md:flex space-x-4 items-center">
+        <a href="/" class="text-gray-300 hover:text-white">Home</a>
+        <a href="about.html" class="text-gray-300 hover:text-white">About</a>
+        <a href="dashboard.html" class="text-gray-300 hover:text-white">Dashboard</a>
+        <a href="result.html" class="text-gray-300 hover:text-white">Results</a>
+        <a href="syllabus.html" class="text-gray-300 hover:text-white">Syllabus</a>
+        <a href="contact.html" class="text-gray-300 hover:text-white">Contact</a>
+  
+        <!-- Login and Signup Buttons -->
+        <a href="#" class="bg-gray-700 text-white px-4 py-2 rounded hover:bg-gray-600">Login</a>
+        <a href="html/signup.html" class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">Signup</a>
+      </div>
+  
+      <!-- Mobile Menu Button -->
+      <div class="md:hidden flex items-center">
+        <button id="menu-btn" class="text-white focus:outline-none">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+          </svg>
+        </button>
+      </div>
+    </div>
+  
+    <!-- Mobile Menu (hidden by default) -->
+    <div id="mobile-menu" class="hidden md:hidden">
+      <a href="#" class="block px-4 py-2 text-gray-300 hover:bg-gray-700 hover:text-white">Home</a>
+      <a href="#" class="block px-4 py-2 text-gray-300 hover:bg-gray-700 hover:text-white">About</a>
+      <a href="#" class="block px-4 py-2 text-gray-300 hover:bg-gray-700 hover:text-white">Services</a>
+      <a href="#" class="block px-4 py-2 text-gray-300 hover:bg-gray-700 hover:text-white">Results</a>
+      <a href="#" class="block px-4 py-2 text-gray-300 hover:bg-gray-700 hover:text-white">Syllabus</a>
+      <a href="#" class="block px-4 py-2 text-gray-300 hover:bg-gray-700 hover:text-white">Contact</a>
+      <a href="#" class="block px-4 py-2 text-gray-300 hover:bg-gray-700 hover:text-white">Login</a>
+      <a href="#" class="block px-4 py-2 text-gray-300 hover:bg-gray-700 hover:text-white">Signup</a>
+    </div>
+  </nav>
+  
+  <!-- Add margin to the body content to prevent content being hidden behind the fixed navbar -->
+  <div class="mt-16">
+    <!-- Your page content starts here -->
+  </div>
+  
+  
+
+  <!-- Hero Section -->
+  <section class="hero-bg h-4 flex items-center justify-center text-white text-4xl font-bold">
+    About Us
+  </section>
+
+  <!-- About College Section -->
+  <section class="container mx-auto p-8">
+    <h2 class="text-3xl font-bold text-center text-blue-600 mb-6">About B.K. Birla Institute of Engineering & Technology, Pilani</h2>
+    <p class="text-gray-700 text-lg leading-relaxed mb-6">
+      B.K. Birla Institute of Engineering & Technology (BKBIET), Pilani, established in 2007, is one of the premier institutes in India for technical education. With a commitment to academic excellence, BKBIET aims to produce competent professionals with a strong ethical foundation. The institute is known for its excellent academic curriculum, state-of-the-art infrastructure, and focus on holistic development.
+    </p>
+  </section>
+
+  <!-- Director Section -->
+  <section class="bg-white py-12">
+    <div class="container mx-auto text-center">
+      <h2 class="text-3xl font-bold text-blue-600 mb-6">Director</h2>
+      <img src="https://via.placeholder.com/150" alt="Director Photo" class="mx-auto rounded-full mb-4">
+      <h3 class="text-xl font-semibold">Dr. Ramesh Chandra</h3>
+      <p class="text-gray-600 mt-2">Director, B.K. Birla Institute of Engineering & Technology</p>
+      <p class="mt-4 text-gray-700">Dr. Ramesh Chandra has over 30 years of experience in education and administration. Under his leadership, the institute has achieved numerous milestones, enhancing academic excellence and research output.</p>
+    </div>
+  </section>
+
+  <!-- Principal Section -->
+  <section class="bg-gray-100 py-12">
+    <div class="container mx-auto text-center">
+      <h2 class="text-3xl font-bold text-blue-600 mb-6">Principal</h2>
+      <img src="https://via.placeholder.com/150" alt="Principal Photo" class="mx-auto rounded-full mb-4">
+      <h3 class="text-xl font-semibold">Prof. Sunita Sharma</h3>
+      <p class="text-gray-600 mt-2">Principal, B.K. Birla Institute of Engineering & Technology</p>
+      <p class="mt-4 text-gray-700">Prof. Sunita Sharma is dedicated to promoting quality education and fostering an environment conducive to learning and research. Her vision is to prepare students for global challenges in the field of technology and innovation.</p>
+    </div>
+  </section>
+
+  <!-- Founder Section -->
+  <section class="bg-white py-12">
+    <div class="container mx-auto text-center">
+      <h2 class="text-3xl font-bold text-blue-600 mb-6">Founder</h2>
+      <img src="https://via.placeholder.com/150" alt="Founder Photo" class="mx-auto rounded-full mb-4">
+      <h3 class="text-xl font-semibold">Shri B.K. Birla</h3>
+      <p class="text-gray-600 mt-2">Founder, B.K. Birla Institute of Engineering & Technology</p>
+      <p class="mt-4 text-gray-700">Shri B.K. Birla, a visionary industrialist and philanthropist, founded the institute with a vision to offer affordable, world-class technical education. His legacy continues to inspire the institution's growth and development.</p>
+    </div>
+  </section>
+
+  <!-- Facilities Section -->
+  <section class="bg-gray-100 py-12">
+    <div class="container mx-auto">
+      <h2 class="text-3xl font-bold text-center text-blue-600 mb-6">Facilities</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div class="bg-white shadow rounded-lg p-6">
+          <h3 class="text-xl font-bold mb-2">Library</h3>
+          <p class="text-gray-700">The institute boasts a well-equipped library with a vast collection of books, journals, and digital resources to support academic learning and research.</p>
+        </div>
+        <div class="bg-white shadow rounded-lg p-6">
+          <h3 class="text-xl font-bold mb-2">Hostel</h3>
+          <p class="text-gray-700">The campus provides comfortable and secure hostel accommodation for students, ensuring a safe and nurturing environment for learning.</p>
+        </div>
+        <div class="bg-white shadow rounded-lg p-6">
+          <h3 class="text-xl font-bold mb-2">Labs</h3>
+          <p class="text-gray-700">Modern laboratories equipped with the latest equipment to provide hands-on learning experiences for students across different branches of engineering.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+    <!-- Placements Section -->
+    <section class="bg-white py-12">
+        <div class="container mx-auto text-center">
+          <h2 class="text-3xl font-bold text-blue-600 mb-6">Placements</h2>
+          <p class="text-gray-700 text-lg leading-relaxed mb-6">Many renowned companies visit the campus for placements, offering students lucrative career opportunities. Some of the top recruiters include TCS, Infosys, Wipro, Capgemini, and other multinational companies.</p>
+        </div>
+      </section>
+    
+      <!-- Courses & Degrees Section -->
+      <section class="bg-gray-100 py-12">
+        <div class="container mx-auto text-center">
+          <h2 class="text-3xl font-bold text-blue-600 mb-6">Courses & Degrees</h2>
+          <ul class="list-disc list-inside text-gray-700">
+            <li>B.Tech in various engineering disciplines</li>
+            <li>B.Com in Commerce and Business Administration</li>
+            <li>Other diploma and certification programs</li>
+          </ul>
+        </div>
+      </section>
+    
+      <!-- Exams Section -->
+      <section class="bg-white py-12">
+        <div class="container mx-auto text-center">
+          <h2 class="text-3xl font-bold text-blue-600 mb-6">Exams</h2>
+          <p class="text-gray-700 text-lg leading-relaxed mb-6">Students are assessed through internal assessments, mid-semester, and end-semester exams. The institute follows a rigorous evaluation process to ensure academic excellence and knowledge retention.</p>
+        </div>
+      </section>
+    
+      <!-- Sports Section -->
+      <section class="bg-gray-100 py-12">
+        <div class="container mx-auto text-center">
+          <h2 class="text-3xl font-bold text-blue-600 mb-6">Sports</h2>
+          <p class="text-gray-700 text-lg leading-relaxed mb-6">The institute promotes physical fitness and teamwork through various sports facilities, including cricket, basketball, football, and a fully equipped gymnasium.</p>
+        </div>
+      </section>
+    
+      <!-- Programs Section -->
+      <section class="bg-white py-12">
+        <div class="container mx-auto text-center">
+          <h2 class="text-3xl font-bold text-blue-600 mb-6">Programs & Events</h2>
+          <p class="text-gray-700 text-lg leading-relaxed mb-6">BKBIET organizes a range of events and programs throughout the year, such as Qusar, Basant, and Freshers' Party, fostering student engagement and community spirit.</p>
+        </div>
+      </section>
+  <!-- Contact Section -->
+  <section class="bg-blue-600 text-white py-12">
+    <div class="container mx-auto text-center">
+      <h2 class="text-3xl font-bold mb-6">Contact Us</h2>
+      <p>Address: B.K. Birla Institute of Engineering & Technology, Pilani, Rajasthan, India</p>
+      <p>Phone: +91 12345 67890</p>
+      <p>Email: info@bkbiet.ac.in</p>
+    </div>
+  </section>
+
+</body>
+</html>

@@ -86,11 +86,11 @@
     <!-- Menu Items (hidden on mobile) -->
     <div class="hidden md:flex space-x-4 items-center">
       <a href="#" class="text-gray-300 hover:text-white">Home</a>
-      <a href="#" class="text-gray-300 hover:text-white">About</a>
+      <a href="html/about.html" class="text-gray-300 hover:text-white">About</a>
       <a href="html/dashboard.html" class="text-gray-300 hover:text-white">Dashboard</a>
       <a href="html/result.html" class="text-gray-300 hover:text-white">Results</a>
       <a href="html/syllabus.html" class="text-gray-300 hover:text-white">Syllabus</a>
-      <a href="#" class="text-gray-300 hover:text-white">Contact</a>
+      <a href="html/contact.html" class="text-gray-300 hover:text-white">Contact</a>
 
       <!-- Login and Signup Buttons -->
       <a href="#" class="bg-gray-700 text-white px-4 py-2 rounded hover:bg-gray-600">Login</a>
@@ -131,6 +131,11 @@
   <div class="clgimage" style="background-image: url('clg image.jpeg'); background-size: cover; background-position: center; height: 600px; width: 100%;"> 
     
   </div>
+  <!-- Header -->
+<header class="bg-gradient-to-r from-blue-600 to-blue-700 text-white p-10 text-center shadow-lg">
+  <h1 class="text-5xl font-extrabold drop-shadow-md">Welcome to Yaduvanshi Shiksha Niketan</h1>
+  <p class="mt-4 text-xl">Shaping the Future, One Student at a Time</p>
+</header>
     <div class="container mx-auto flex justify-between items-start p-6">
       
       <!-- Text Section -->
@@ -142,6 +147,10 @@
         <a href="#">Read More</a>
       </div>
 
+      <form method="POST" action="/send-email">
+        <!-- Your form inputs -->
+     
+      
       <!-- Form Section -->
       <div class="form-box">
         <h2>Contact Us</h2>
@@ -166,10 +175,19 @@
           <button type="submit">Submit</button>
         </form>
       </div>
-
     </div>
+  </form>
+  
      
-    
+    <!-- About Us Section -->
+<section class="p-10">
+  <div class="bg-gradient-to-r from-blue-300 to-purple-400 text-white rounded-xl shadow-xl p-8">
+      <h2 class="text-4xl font-bold mb-4">About Us</h2>
+      <p class="text-lg">
+          Welcome to Yaduvanshi Shiksha Niketan, a prestigious institution committed to nurturing excellence in education, innovation, and holistic development. Our mission is to create a transformative learning environment that empowers students to become leaders of tomorrow.
+      </p>
+  </div>
+</section>
 
     <div>
      <!-- Main Container -->
@@ -212,6 +230,61 @@
   </style>
    
   </div>
+
+  <!-- Academic Programs -->
+<section class="p-10">
+  <div class="bg-gradient-to-r from-blue-300 to-blue-500 text-white rounded-xl shadow-xl p-8">
+      <h2 class="text-4xl font-bold mb-4">Academic Programs</h2>
+      <ul class="list-disc list-inside">
+          <li><strong>B.Tech</strong>: Specializations in Computer Science, Electronics, Mechanical, Civil, and more.</li>
+          <li><strong>M.Tech</strong>: Advanced postgraduate courses in niche technical areas.</li>
+          <li><strong>B.Com</strong>: Business and commerce courses that blend theory with practical learning.</li>
+      </ul>
+  </div>
+</section>
+
+<!-- Campus Life & Events -->
+<section class="p-10">
+  <div class="bg-gradient-to-r from-pink-300 to-red-400 text-white rounded-xl shadow-xl p-8">
+      <h2 class="text-4xl font-bold mb-4">Campus Life & Events</h2>
+      <ul class="list-disc list-inside">
+          <li><strong>Basant</strong>: Our annual spring fest with cultural performances, music concerts, and exhibitions.</li>
+          <li><strong>Freshers' Party</strong>: A celebration of new beginnings with music, dance, and fun activities.</li>
+          <li><strong>Qusar</strong>: Our flagship cultural and technical fest with competitions, workshops, and live performances.</li>
+      </ul>
+  </div>
+</section>
+
+<!-- Our Facilities Section -->
+<section class="p-10">
+  <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+      <div class="bg-gradient-to-r from-green-400 to-blue-500 text-white rounded-xl shadow-lg p-6">
+          <h3 class="text-3xl font-bold mb-4">Libraries</h3>
+          <p>Expansive libraries housing books, journals, and research materials.</p>
+      </div>
+      <div class="bg-gradient-to-r from-red-400 to-orange-500 text-white rounded-xl shadow-lg p-6">
+          <h3 class="text-3xl font-bold mb-4">Hostels</h3>
+          <p>Separate hostels for boys and girls with 24/7 security, Wi-Fi, and recreation spaces.</p>
+      </div>
+      <div class="bg-gradient-to-r from-purple-400 to-pink-500 text-white rounded-xl shadow-lg p-6">
+          <h3 class="text-3xl font-bold mb-4">Playgrounds</h3>
+          <p>Dedicated playgrounds for cricket, football, basketball, and athletics.</p>
+      </div>
+  </div>
+</section>
+
+
+<!-- Placements -->
+<section class="p-10">
+  <div class="bg-gradient-to-r from-yellow-200 to-orange-300 text-white rounded-xl shadow-xl p-8">
+      <h2 class="text-4xl font-bold mb-4">Placements & Career Support</h2>
+      <ul class="list-disc list-inside">
+          <li><strong>Placement Drives</strong>: Industry giants recruit students from campus.</li>
+          <li><strong>Internship Opportunities</strong>: Hands-on learning with internships at reputable organizations.</li>
+          <li><strong>Skill Development Workshops</strong>: Resume-building sessions, interview preparation, and soft skills training.</li>
+      </ul>
+  </div>
+</section>
 
 
   <div class="mt-10 mb-15">
@@ -256,7 +329,29 @@
   
  </div>
 
-
+ <!-- Why Choose Us -->
+<section class="p-10">
+  <div class="bg-gradient-to-r from-blue-400 to-blue-500 text-white rounded-xl shadow-xl p-8">
+      <h2 class="text-4xl font-bold mb-4">Why Choose Yaduvanshi Shiksha Niketan?</h2>
+      <ul class="list-disc list-inside">
+          <li>Holistic development through academics, co-curricular, and extracurricular activities.</li>
+          <li>State-of-the-art infrastructure to support learning, research, and innovation.</li>
+          <li>Dedicated support for placements, internships, and career growth.</li>
+          <li>A campus culture that promotes inclusion, creativity, and collaboration.</li>
+      </ul>
+  </div>
+</section>
+<!-- Contact Us -->
+<section class="p-10">
+  <div class="bg-gradient-to-r from-purple-500 to-indigo-500 text-white rounded-xl shadow-xl p-8">
+      <h2 class="text-4xl font-bold mb-4">Contact Us</h2>
+      <ul class="list-none">
+          <li><strong>Email</strong>: <a href="mailto:yourcollege@example.com" class="text-white underline">college@example.com</a></li>
+          <li><strong>Phone</strong>: Yaduvanshi Shiksha Niketan</li>
+          <li><strong>Location</strong>:Pilani(Rajasthan|)</li>
+      </ul>
+  </div>
+</section>
 
     <!-- Footer Start -->
 <div class="bg-gray-900 text-gray-400 pt-5 mt-5">
